@@ -10,6 +10,16 @@ public class Bar : MonoBehaviour
  
     private float _speed = 10f;
    
+    private IEnumerator EditValue()
+    {
+        while(_health.Value != _slider.value)
+        {
+            _slider.value = Mathf.MoveTowards(_slider.value,_health.Value, _speed*Time.deltaTime);        
+
+            yield return null;
+        }
+    }
+
     public void HandleCoroutine()
     {     
         if(_health.Value!=_slider.value)
@@ -17,16 +27,5 @@ public class Bar : MonoBehaviour
 
         else
             StopCoroutine(EditValue());
-    }
-
-    private IEnumerator EditValue()
-    {
-        while(_health.Value != _slider.value)
-        {
-            _slider.value = Mathf.MoveTowards(_slider.value,_health.Value, _speed*Time.deltaTime);
-            Debug.Log(_slider.value);
-
-            yield return null;
-        }
     }
 }
