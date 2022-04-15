@@ -25,17 +25,17 @@ public class Health : MonoBehaviour
         {
             Value -= _damagePower;
             ControlValue();
-            _changeValue.Invoke();
+            _changeValue!.Invoke();
         }
     }
 
-    public void Healing()
+    public void Heal()
     {
         if (Value < _maxValue)
         {
             Value += _healingPower;
             ControlValue();
-            _changeValue.Invoke();
+            _changeValue!.Invoke();
         }
     }
 }
