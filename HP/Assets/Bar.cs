@@ -10,7 +10,6 @@ public class Bar : MonoBehaviour
  
     private float _speed = 10f;
 
-
     private void OnEnable()
     {
         _health.Changed += StartEditValue;
