@@ -9,7 +9,18 @@ public class Bar : MonoBehaviour
     [SerializeField] private Slider _slider;
  
     private float _speed = 10f;
-   
+
+
+    private void OnEnable()
+    {
+        _health.Changed += StartEditValue;
+    }
+
+    private void OnDisable()
+    {
+        _health.Changed -= StartEditValue;
+    }
+
     private IEnumerator EditValue()
     {
         while(_health.Value != _slider.value)
