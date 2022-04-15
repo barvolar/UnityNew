@@ -20,7 +20,7 @@ public class Bar : MonoBehaviour
         }
     }
 
-    public void HandleCoroutine()
+    public void StartEditValue()
     {     
         if(_health.Value!=_slider.value)
             StartCoroutine(EditValue());

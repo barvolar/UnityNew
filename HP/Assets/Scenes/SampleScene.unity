@@ -231,12 +231,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e4ab31076a2814f872b0aba3735dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _changeValue:
+  _changed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 334461939}
         m_TargetAssemblyTypeName: Bar, Assembly-CSharp
-        m_MethodName: HandleCoroutine
+        m_MethodName: StartEditValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

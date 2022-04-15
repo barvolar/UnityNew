@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private UnityEvent _changeValue;
+    [SerializeField] private UnityEvent _changed;
 
     private float _healingPower = 7f;
     private float _damagePower = 10f;
@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
 
     public float Value { get; private set; }
 
-    private void ControlValue()
+    private void Clamp()
     {
         Value = Mathf.Clamp(Value, 0, _maxValue);
     }
@@ -24,8 +24,8 @@ public class Health : MonoBehaviour
         if (Value > 0)
         {
             Value -= _damagePower;
-            ControlValue();
-            _changeValue!.Invoke();
+            Clamp();
+            _changed!.Invoke();
         }
     }
 
@@ -34,8 +34,8 @@ public class Health : MonoBehaviour
         if (Value < _maxValue)
         {
             Value += _healingPower;
-            ControlValue();
-            _changeValue!.Invoke();
+            Clamp();
+            _changed!.Invoke();
         }
     }
 }
