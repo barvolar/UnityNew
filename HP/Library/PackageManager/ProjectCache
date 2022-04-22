@@ -5,27 +5,27 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637837264105491800
-    m_Hash: 1963389025
+      ticks: 637857198951522427
+    m_Hash: 2764163754
   m_LockFileStatus:
     m_FilePath: E:/UnityGit/UnityNew/HP/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637837264317189943
-    m_Hash: 3265909920
+      ticks: 637857198951793496
+    m_Hash: 608596552
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
-    - packageId: com.unity.2d.animation@5.1.0
+    - packageId: com.unity.2d.animation@5.1.1
       testable: 0
       isDirectDependency: 1
-      version: 5.1.0
+      version: 5.1.1
       source: 1
-      resolvedPath: E:\UnityGit\UnityNew\HP\Library\PackageCache\com.unity.2d.animation@5.1.0
+      resolvedPath: E:\UnityGit\UnityNew\HP\Library\PackageCache\com.unity.2d.animation@5.1.1
       assetPath: Packages/com.unity.2d.animation
       name: com.unity.2d.animation
       displayName: 2D Animation
@@ -177,13 +177,119 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637781310880000000
+      datePublishedTicks: 637810583410000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/2d.git
-        revision: e1ff2896b994f5eb1cc6bec519c643b3e2cd32ec
+        revision: 6d621046a6155c48d71d5749b56c8bb9beaa02db
+        path: 
+    - packageId: com.unity.2d.ik@3.0.2-preview.3
+      testable: 0
+      isDirectDependency: 1
+      version: 3.0.2-preview.3
+      source: 1
+      resolvedPath: E:\UnityGit\UnityNew\HP\Library\PackageCache\com.unity.2d.ik@3.0.2-preview.3
+      assetPath: Packages/com.unity.2d.ik
+      name: com.unity.2d.ik
+      displayName: 2D IK
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: 2D IK package provides the necessary editor tooling to setup inverse
+        kinematics for 2D characters and a runtime component to execute it.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.5-preview.1
+        - 1.0.5-preview.2
+        - 1.0.5-preview.3
+        - 1.0.6-preview
+        - 1.0.6-preview.1
+        - 1.0.7-preview.1
+        - 1.0.8-preview.1
+        - 1.1.0-preview.1
+        - 1.2.0-preview.2
+        - 1.3.0-preview.1
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
+        - 2.0.1-preview.2
+        - 2.0.2-preview.1
+        - 2.1.0-preview.1
+        - 2.2.0-preview.1
+        - 3.0.0-preview.1
+        - 3.0.0-preview.2
+        - 3.0.1-preview.2
+        - 3.0.2-preview.1
+        - 3.0.2-preview.3
+        compatible:
+        - 1.0.5-preview.1
+        - 1.0.5-preview.2
+        - 1.0.5-preview.3
+        - 1.0.6-preview
+        - 1.0.6-preview.1
+        - 1.0.7-preview.1
+        - 1.0.8-preview.1
+        - 1.1.0-preview.1
+        - 1.2.0-preview.2
+        - 1.3.0-preview.1
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
+        - 2.0.1-preview.2
+        - 2.0.2-preview.1
+        - 2.1.0-preview.1
+        - 2.2.0-preview.1
+        - 3.0.0-preview.1
+        - 3.0.0-preview.2
+        - 3.0.1-preview.2
+        - 3.0.2-preview.1
+        - 3.0.2-preview.3
+        verified: 
+      dependencies:
+      - name: com.unity.2d.common
+        version: 3.0.1
+      resolvedDependencies:
+      - name: com.unity.2d.common
+        version: 4.1.0
+      - name: com.unity.2d.sprite
+        version: 1.0.0
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.uielementsnative
+        version: 1.0.0
+      keywords:
+      - 2d
+      - ik
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637436853810000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/2d.git
+        revision: dd8b11f003d767d40cea1bf8767e294c05869f4e
         path: 
     - packageId: com.unity.2d.pixel-perfect@4.0.1
       testable: 0
@@ -365,7 +471,7 @@ m_PackageAssets:
       - name: com.unity.modules.uielementsnative
         version: 1.0.0
       - name: com.unity.2d.animation
-        version: 5.1.0
+        version: 5.1.1
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.modules.animation
